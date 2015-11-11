@@ -105,6 +105,12 @@ var SampleApp = function() {
             //res.send(self.cache_get('index.html') );
             res.send('hello world');
         };
+
+        self.routes['/sam'] = function(req, res) {
+            res.setHeader('Content-Type', 'text/html');
+            //res.send(self.cache_get('index.html') );
+            res.send('hello sam');
+        };
     };
 
 
